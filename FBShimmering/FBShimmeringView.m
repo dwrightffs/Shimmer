@@ -49,6 +49,8 @@ LAYER_ACCESSOR(shimmeringFadeTime, CFTimeInterval)
 LAYER_RW_PROPERTY(shimmeringBeginFadeDuration, setShimmeringBeginFadeDuration:, CFTimeInterval)
 LAYER_RW_PROPERTY(shimmeringEndFadeDuration, setShimmeringEndFadeDuration:, CFTimeInterval)
 LAYER_RW_PROPERTY(shimmeringBeginTime, setShimmeringBeginTime:, CFTimeInterval)
+LAYER_RW_PROPERTY(shimmeringStartPoint, setShimmeringStartPoint:, NSValue*)
+LAYER_RW_PROPERTY(shimmeringEndPoint, setShimmeringEndPoint:, NSValue*)
 
 - (void)setContentView:(UIView *)contentView
 {

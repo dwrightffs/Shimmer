@@ -51,6 +51,12 @@ static const float FBShimmerDefaultBeginTime = CGFLOAT_MAX;
 //! @abstract The duration of the fade used when shimmer ends. Defaults to 0.3.
 @property (assign, nonatomic, readwrite) CFTimeInterval shimmeringEndFadeDuration;
 
+//! @abstract The start point for the gradient mask. NSValue containing a CGPoint. Defaults to nil.
+@property (strong, nonatomic, readwrite) NSValue *shimmeringStartPoint;
+
+//! @abstract The end point for the gradient mask. NSValue containing a CGPoint. Defaults to nil.
+@property (strong, nonatomic, readwrite) NSValue *shimmeringEndPoint;
+
 /**
  @abstract The absolute CoreAnimation media time when the shimmer will fade in.
  @discussion Only valid after setting {@ref shimmering} to NO.
